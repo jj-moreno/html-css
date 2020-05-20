@@ -77,6 +77,11 @@ header, footer {
     flex-basis: 100px;
 }
 
+div {
+    display: inline-flex;
+    font-size: 20px;
+    
+}
 
 @media all and (max-width: 960px) {
     main {
@@ -98,7 +103,6 @@ header, footer {
 
     main {
         flex-direction: column;
-        flex-basis: 500px;
     }
     
     section {
@@ -109,6 +113,8 @@ header, footer {
         flex-direction: row;
         order: 1;
     }
+
+
 }
 
 
@@ -116,5 +122,5 @@ header, footer {
     main {
         flex-basis: 500px;
     }
-
+    
 }
