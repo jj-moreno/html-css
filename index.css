@@ -9,24 +9,29 @@ body {
 header {
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 30px;
+}
+
+header > a {
+    display: flex;
+    align-items: center;
 }
 
 nav > a {
     align-items: center;
-    font-size: 40px;
-    margin: 20px;
+    font-size: 30px;
+    margin: 10px;
     text-decoration: none;
-    color: #95a5a6;
+    color: #0b1947;
     font-family: raleway;
-    border-bottom: 1px solid #a6c1ee;
+    border-bottom: 1px solid #0b1947;
     transition: color 0.5s ease-out;
 }
-  a:hover {
-      color: #77ffff;
-      border-bottom-color: #77ffff;
-  }
+a:hover {
+    color: #338888;
+    border-bottom-color: #338888;
+}
+
 main > *, footer, header {
     margin: 4px;
     padding: 5px;
@@ -34,34 +39,37 @@ main > *, footer, header {
 }
   
 article {
-    flex-basis: 60%;
+    flex-basis: 50%;
     background: #fbc2eb;
-    flex-grow: 4;
-    font-size: 40px;
+    font-size: 30px;
+    padding: 10px;
 }
 main {
     display: flex;
-    flex-basis: 800px;
+    flex-basis: 700px;
+    font-size: 25px;
 }
 nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex: 1 0 20%;
-    order: -1;
+    justify-content: space-around;
+    align-items: flex-start;
     background: orange;
     
 }
 
 section {
     flex-basis: 10%;
-    font-size: 40px;
+    padding: 10px;
 }
 
 aside {
-    flex-basis: 20%;
     background: yellow;
     flex-grow: 1;
+}
+
+li {
+    padding: 4px;
 }
 
 header, footer {
@@ -69,12 +77,44 @@ header, footer {
     flex-basis: 100px;
 }
 
-@media all and (max-width: 640px) {
+
+@media all and (max-width: 960px) {
     main {
         flex-direction: column;
     }
 
-    section {
-        order: 0;
+    nav {
+        flex-direction: row;
+        order: 1;
     }
-} 
+}
+
+@media all and (max-width: 1200px) {
+   
+     header {
+         font-size: 25px;
+         align-items: center;
+     }
+
+    main {
+        flex-direction: column;
+        flex-basis: 500px;
+    }
+    
+    section {
+        font-size: 20px;
+    }
+
+    nav {
+        flex-direction: row;
+        order: 1;
+    }
+}
+
+
+@media all and (max-width: 1600px) {
+    main {
+        flex-basis: 500px;
+    }
+
+}
