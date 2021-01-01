@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Contact Form</title>
 </head>
 <body>
     
+    <header class="header-special">
+            <a href="index.html">< Go Back</a>
+    </header>
+
+    <main>
+
+            
+        <section>
+            <h2>Contact Form:</h2>
+        </section>
+    
+        <article>
+            <!-- Forms-intro: example of using input tag with label tag -->
+			<label>First Name:
+				<input type="text" name="firstName">
+			</label>
+            <br>
+			<label for="lastName">Last Name:</label>
+			<input id="lastName" type="text" name="lastName">
+				<br>
+			<!--Forms pt. 2: example of different type of inputs-->
+			<label for="email">Email:</label>
+			<input id="email" type="email" name="email">
+			<br>
+			<label for="telephone">Telephone:</label>
+			<input id="telephone" type="tel" name="telephone">
+			<br>
+			<label for="yourMessage">Your Message:</label>
+            <textarea id="yourMessage" name="yourMessage"></textarea>
+            <br>
+            <input id="Submit" type="submit" value="Submit">
+        </article>
+        
+        <aside>
+            <p>Please allow 24 hours for a response. Thank you! </p>
+        </aside>
+    </main>
+    
+    <footer>
+        <h1>© 2020 TEKsytems Fullstack Bootcamp</h1>
+    </footer>
+
 </body>
 </html>
